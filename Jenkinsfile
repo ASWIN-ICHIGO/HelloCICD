@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven3'   // must match the name in Manage Jenkins → Tools
-        jdk   'JDK17'    // same: match your configured JDK name
-    }
-
     stages {
         stage('Build') {
             steps {
